@@ -1,11 +1,9 @@
-import { createSlice } from '@reduxjs/toolkit'
-import type { PayloadAction } from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit';
+import { IAuthState } from '../interfaces/auth.interface';
 
-export interface AuthState {
-    token: string | null;
-}
 
-const initialState: AuthState = {
+
+const initialState: IAuthState = {
     token: null
 }
 

@@ -2,7 +2,7 @@ import { createTheme } from '@mui/material/styles';
 import { colorManager } from './color_manager';
 
 // A custom theme for this app
-const theme = createTheme({
+export const theme = createTheme({
   palette: {
     primary: {
       main: colorManager.primary,
@@ -16,4 +16,3 @@ const theme = createTheme({
   },
 });
 
-export default theme;

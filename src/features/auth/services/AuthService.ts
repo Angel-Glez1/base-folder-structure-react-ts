@@ -1,25 +1,19 @@
-import { IAuthService } from "../interfaces/AuthService.interface";
+import authMockdate from '../../../assets/mock_data/auth/auth.mockdata';
 
 
 
+const login = () => new Promise((resolve, _) => {
+    setTimeout(() => resolve(authMockdate.token) , 2500)
+})
 
 
-
-export const AuthService = (): IAuthService => {
-
-    const login = () => new Promise((resolve, _) => {
-        return resolve(1);
-    })
+const logout = () => new Promise((resolve, _) => {
+    return resolve(0);
+})
 
 
-    const logout = () => new Promise((resolve, _) => {
-        return resolve(0);
-    })
-    
-
-
-    return {
-        login,
-        logout
-    }
+export default {
+    login,
+    logout
 }
+

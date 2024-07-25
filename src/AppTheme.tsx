@@ -1,7 +1,7 @@
 import React from "react";
 import { ThemeProvider } from "@emotion/react";
 import { CssBaseline } from "@mui/material";
-import theme from "./config/theme/theme";
+import { theme } from "@config/theme";
 
 
 interface Props {
