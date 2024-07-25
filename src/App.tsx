@@ -1,10 +1,15 @@
-import React from 'react'
+import { AppTheme } from './AppTheme'
+import { AppRouter } from "./router/AppRouter"
+
+
+
+
 
 const App = () => {
   return (
-    <div>
-      <p>Hola Mundo</p>
-    </div>
+    <AppTheme>
+      <AppRouter />
+    </AppTheme>
   )
 }
 
